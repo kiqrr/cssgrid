@@ -1,0 +1,137 @@
+body {
+    background: linear-gradient(to bottom, rgb(221, 144, 0), #adac74);
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    list-style: none; /* Remove marcadores da lista */
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px; /* Limita a largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+    display: grid; /* Ativa o grid layout */
+    grid-template-columns: 0.7fr 1fr 1fr; /* Define 3 colunas, a primeira menor */
+    grid-template-rows: auto auto auto; /* Altura automática para cada linha */
+    grid-template-areas:
+        "sidenav item1 item2"
+        "sidenav item3 item4"
+        "footer footer footer"; /* Define as áreas nomeadas para cada elemento */
+    gap: 20px; /* Espaçamento entre as áreas do grid */
+    padding: 20px;
+    border: 1px solid #fff; /* Bordas para destacar o contêiner */
+    margin-inline: 10%;
+}
+
+.logo {
+    max-width: 26%;
+}
+
+.main {
+    max-width: 80%;
+}
+
+.mainsub1 {
+    max-width: 10%;
+}
+
+
+
+
+
+
+
+
+
+.sidenav {
+    grid-area: sidenav; /* Define a área do grid que a barra lateral ocupará */
+    background-color: #003ce3; /* Fundo azul escuro */
+    color: #ffffff; /* Cor do texto em azul claro */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 20px;
+}
+
+.item:nth-child(2) { grid-area: item1; }
+.item:nth-child(3) { grid-area: item2; }
+.item:nth-child(4) { grid-area: item3; }
+.item:nth-child(5) { grid-area: item4; }
+
+.item {
+    background-color: #ccc;
+    border-radius: 20px; /* Arredonda os cantos do item */
+    display: flex; /* Organiza o conteúdo do item como um flex container */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: scale-down;
+    max-width: 100%;
+}
+
+.footer {
+    grid-area: footer;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px; /* Aumenta o tamanho do rodapé */
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin-bottom: 15px;
+}
+
+.footer .social-icons {
+    display: flex; /* Organiza os ícones de redes sociais em linha */
+    justify-content: center; /* Centraliza os ícones */
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.pgf {
+    display: flex;
+    justify-content: center;
+    font-size: 0.7em;
+    color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-inline: 10px;
+}
+
+
+
+
+
+.hvr {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.hvr:hover {
+    transform: scale(1.3); /* Aumenta o tamanho em 30% */
+}
